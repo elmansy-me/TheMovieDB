@@ -39,7 +39,7 @@ class ImageViewController: BaseViewController {
     private func setImage(){
         switch source{
         case .url(let data):
-            imageView.setImage(url: data.absoluteString, config: .init(isDownsamplingEnabled: true))
+            imageView.setImage(url: data.absoluteString, placeholder: .placeholder, config: .init(isDownsamplingEnabled: true))
         case .image(let data):
             imageView.image = data
         case .none:
