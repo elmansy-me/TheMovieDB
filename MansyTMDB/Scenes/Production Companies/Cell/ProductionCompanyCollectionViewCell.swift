@@ -14,7 +14,7 @@ class ProductionCompanyCollectionViewCell: UICollectionViewCell, ReusableView {
     @IBOutlet weak var label: UILabel!
     
     func configure(data: ProductionCompanyModel){
-        imageView.setImage(url: data.imageURL(quality: .thumbnail), placeholder: UIImage(systemName: "photo.circle"))
+        imageView.setImage(url: data.imageURL(quality: .thumbnail), placeholder: .placeholder)
         label.text = data.name
     }
     
