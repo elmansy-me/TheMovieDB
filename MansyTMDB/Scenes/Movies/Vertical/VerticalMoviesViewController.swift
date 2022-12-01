@@ -133,7 +133,7 @@ extension VerticalMoviesViewController: UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = MoviesRouter.getDestination(.movie(data: data[indexPath.item]))
+        let vc = MoviesRouter().getViewController(.movie(data: data[indexPath.item]))
         navigateTo(vc)
     }
     

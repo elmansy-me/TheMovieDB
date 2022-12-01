@@ -57,14 +57,9 @@ extension ProductionCompaniesViewController: UICollectionViewDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let vc = MoviesRouter.getDestination(.movie(data: data[indexPath.item]))
-//        navigateTo(vc)
-
-        let viewController = ProductionCompanyViewController.instantiate(data: data[indexPath.item])
-        if let presentationController = viewController.presentationController as? UISheetPresentationController {
-            presentationController.detents = [.medium(), .large()]
-        }
-        self.present(viewController, animated: true)
+        let data = data[indexPath.item]
+        let vc = ProductionCompanyRouter().getViewController(.details(data: data))
+        present(vc, animated: true)
     }
     
 }

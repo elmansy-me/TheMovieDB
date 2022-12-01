@@ -8,20 +8,20 @@
 import UIKit
 import MansyTMDBCore
 
-struct MoviesRouter{
+struct MoviesRouter: Router{
     
     enum Destination{
         case movie(data: BaseMovieModel)
     }
     
-    static func getDestination(_ destination: Destination)-> UIViewController{
+    func getViewController(_ destination: Destination)-> UIViewController{
         switch destination{
         case .movie(let data):
             return getDestination(data: data)
         }
     }
     
-    static private func getDestination(data: BaseMovieModel)-> UIViewController{
+    private func getDestination(data: BaseMovieModel)-> UIViewController{
         let vc = MovieViewController.instantiate(repo: MovieRepository(), data: data)
         return vc
     }

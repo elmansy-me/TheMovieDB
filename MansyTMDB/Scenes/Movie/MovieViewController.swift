@@ -102,10 +102,10 @@ class MovieViewController: BaseViewController {
     
     @objc private func imageViewDidPress(){
         if let image = imageView.image{
-            let vc = MovieRouter.getDestination(.image(source: .image(data: image)))
+            let vc = MovieRouter().getViewController(.image(source: .image(data: image)))
             navigateTo(vc)
         }else if let path = viewModel?.data?.imageURL(quality: .large), let url = URL(string: path){
-            let vc = MovieRouter.getDestination(.image(source: .url(data: url)))
+            let vc = MovieRouter().getViewController(.image(source: .url(data: url)))
             navigateTo(vc)
         }
     }

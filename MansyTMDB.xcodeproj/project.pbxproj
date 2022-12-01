@@ -25,6 +25,8 @@
 		A724262429365703005C7243 /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A724262229365703005C7243 /* MovieViewController.xib */; };
 		A724262629366087005C7243 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A724262529366087005C7243 /* MovieViewModel.swift */; };
 		A74FAC262938B11000DA60DD /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74FAC252938B11000DA60DD /* UIImage+Ext.swift */; };
+		A74FAC282938BE6500DA60DD /* ProductionCompanyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74FAC272938BE6500DA60DD /* ProductionCompanyRouter.swift */; };
+		A74FAC2A2938C08000DA60DD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74FAC292938C08000DA60DD /* Router.swift */; };
 		A7607D5A293785C500092202 /* GenresRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7607D59293785C500092202 /* GenresRouter.swift */; };
 		A7607D6129378AFE00092202 /* MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7607D6029378AFE00092202 /* MoviesRouter.swift */; };
 		A7607D6329378BD100092202 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7607D6229378BD100092202 /* HomeRouter.swift */; };
@@ -113,6 +115,8 @@
 		A724262229365703005C7243 /* MovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		A724262529366087005C7243 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		A74FAC252938B11000DA60DD /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		A74FAC272938BE6500DA60DD /* ProductionCompanyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionCompanyRouter.swift; sourceTree = "<group>"; };
+		A74FAC292938C08000DA60DD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A7607D59293785C500092202 /* GenresRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresRouter.swift; sourceTree = "<group>"; };
 		A7607D6029378AFE00092202 /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
 		A7607D6229378BD100092202 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -278,10 +282,12 @@
 		A7607D5B2937872700092202 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				A74FAC292938C08000DA60DD /* Router.swift */,
 				A7607D6229378BD100092202 /* HomeRouter.swift */,
 				A7607D59293785C500092202 /* GenresRouter.swift */,
 				A7607D6029378AFE00092202 /* MoviesRouter.swift */,
 				A7607D702937924400092202 /* MovieRouter.swift */,
+				A74FAC272938BE6500DA60DD /* ProductionCompanyRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -721,7 +727,9 @@
 				A7F8E5A529377C830016DD57 /* GenreCollectionViewCell.swift in Sources */,
 				A7ACAE422930FF6300FA48A5 /* GridMovieCollectionViewCell.swift in Sources */,
 				A724261C2936562C005C7243 /* PopularMoviesDatasource.swift in Sources */,
+				A74FAC2A2938C08000DA60DD /* Router.swift in Sources */,
 				A799F89A2930247E00C73408 /* HorizontalMoviesViewController.swift in Sources */,
+				A74FAC282938BE6500DA60DD /* ProductionCompanyRouter.swift in Sources */,
 				A724262629366087005C7243 /* MovieViewModel.swift in Sources */,
 				A7AB45502937BFF000D2F162 /* ProductionCompanyViewController.swift in Sources */,
 				A7607D7F2937B67000092202 /* ProductionCompanyCollectionViewCell.swift in Sources */,

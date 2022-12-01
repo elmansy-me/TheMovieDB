@@ -59,7 +59,7 @@ extension GenresViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = GenresRouter.getDestination(.movies(genres: [ data[indexPath.item] ]))
+        let vc = GenresRouter().getViewController(.movies(genres: [ data[indexPath.item] ]))
         navigateTo(vc)
     }
     

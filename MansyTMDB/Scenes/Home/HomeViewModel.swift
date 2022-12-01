@@ -85,7 +85,7 @@ class HomeViewModel: BaseViewModel{
         let initialData = getCurrentMovies(of: category)
         let initialPage = initialData.isEmpty ? 1 : 2
         let datasource = getDatasource(of: category, initalPage: initialPage, initialData: initialData)
-        let vc = HomeRouter.getDestination(.seeAll(category: category, datasource: datasource))
+        let vc = HomeRouter().getViewController(.seeAll(category: category, datasource: datasource))
         self.destinationViewController.send(vc)
     }
     

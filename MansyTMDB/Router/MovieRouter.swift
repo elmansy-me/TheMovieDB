@@ -8,20 +8,20 @@
 import UIKit
 import MansyTMDBCore
 
-struct MovieRouter{
+struct MovieRouter: Router{
     
     enum Destination{
         case image(source: ImageSource)
     }
     
-    static func getDestination(_ destination: Destination)-> UIViewController{
+    func getViewController(_ destination: Destination)-> UIViewController{
         switch destination{
         case .image(let source):
             return getImageViewController(source: source)
         }
     }
     
-    static private func getImageViewController(source: ImageSource)-> UIViewController{
+    private func getImageViewController(source: ImageSource)-> UIViewController{
         let vc = ImageViewController.instantiate(source: source)
         return vc
     }
