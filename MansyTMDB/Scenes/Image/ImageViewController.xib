@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="iag-by-Ncj" customClass="ImageViewController" customModule="MansyTMDB" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="Wub-rf-Rr1">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0X-ZS-zGA">
+                        <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-iy-cNb">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CPJ-iy-cNb" secondAttribute="trailing" id="GuX-aP-TcF"/>
+                            <constraint firstItem="CPJ-iy-cNb" firstAttribute="height" secondItem="S0X-ZS-zGA" secondAttribute="height" id="L64-P3-ILY"/>
+                            <constraint firstItem="CPJ-iy-cNb" firstAttribute="top" secondItem="S0X-ZS-zGA" secondAttribute="top" id="QFh-qV-5lO"/>
+                            <constraint firstItem="CPJ-iy-cNb" firstAttribute="leading" secondItem="S0X-ZS-zGA" secondAttribute="leading" id="noO-uW-3pu"/>
+                            <constraint firstAttribute="bottom" secondItem="CPJ-iy-cNb" secondAttribute="bottom" id="qKL-kz-kT4"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="7f6-8K-CoD"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="S0X-ZS-zGA" firstAttribute="top" secondItem="7f6-8K-CoD" secondAttribute="top" id="Apw-BZ-KP3"/>
+                    <constraint firstItem="S0X-ZS-zGA" firstAttribute="leading" secondItem="7f6-8K-CoD" secondAttribute="leading" id="CRg-WK-GxY"/>
+                    <constraint firstItem="7f6-8K-CoD" firstAttribute="bottom" secondItem="S0X-ZS-zGA" secondAttribute="bottom" id="EbY-RF-AGp"/>
+                    <constraint firstItem="CPJ-iy-cNb" firstAttribute="width" secondItem="Wub-rf-Rr1" secondAttribute="width" id="Vuo-La-GB4"/>
+                    <constraint firstItem="7f6-8K-CoD" firstAttribute="trailing" secondItem="S0X-ZS-zGA" secondAttribute="trailing" id="wIh-Tw-R3d"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="imageView" destination="CPJ-iy-cNb" id="tdC-YY-Xpi"/>
+                <outlet property="scrollView" destination="S0X-ZS-zGA" id="LcN-lC-L8W"/>
+            </connections>
+            <point key="canvasLocation" x="145" y="-16"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
