@@ -23,7 +23,7 @@ class ListMovieCollectionViewCell: UICollectionViewCell, ReusableView {
     }
     
     func configure(data: BaseMovieModel){
-        imageView.setImage(url: data.imageURL(quality: .thumbnail), placeholder: nil, config: .init(isDownsamplingEnabled: true))
+        imageView.setImage(url: data.imageURL(quality: .thumbnail), placeholder: .placeholder, config: .init(isDownsamplingEnabled: true))
         nameLabel.text = data.title
         descriptionLabel.text = data.overview
         ratingLabel.text = String(data.vote_average)
