@@ -74,7 +74,7 @@ class MovieViewController: BaseViewController {
     
     private func setupUI(data: MovieModel){
         containerView.isHidden = false
-        imageView.setImage(url: data.imageURL(quality: .medium), config: .init(isDownsamplingEnabled: true))
+        imageView.setImage(url: data.imageURL(quality: .medium), placeholder: .placeholder , config: .init(isDownsamplingEnabled: true))
         nameLabel.text = data.original_title
         descriptionLabel.text = data.overview
         ratingLabel.text = String(data.vote_average)
