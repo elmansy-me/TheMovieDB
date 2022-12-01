@@ -41,7 +41,7 @@ class ProductionCompanyViewController: BaseViewController {
             imageView.isHidden = true
         }else{
             imageView.isHidden = false
-            imageView.setImage(url: imageURL, placeholder: UIImage(systemName: "photo.circle"))
+            imageView.setImage(url: imageURL, placeholder: .placeholder)
         }
         nameLabel.text = data.name
         originCountryLabel.text = data.origin_country
